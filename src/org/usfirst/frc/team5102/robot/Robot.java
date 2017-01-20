@@ -1,5 +1,8 @@
-
 package org.usfirst.frc.team5102.robot;
+
+import org.usfirst.frc.team5102.robot.commands.DriveWithJoysticks;
+import org.usfirst.frc.team5102.robot.subsystems.DriveTrain;
+import org.usfirst.frc.team5102.robot.subsystems.ExampleSubsystem;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -7,9 +10,6 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
-import org.usfirst.frc.team5102.robot.commands.ExampleCommand;
-import org.usfirst.frc.team5102.robot.subsystems.ExampleSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,6 +22,9 @@ public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
+	public static DriveTrain driveTrain;
+	
+	//public static DriveWithJoysticks driveWithJoysticks;
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -102,8 +105,10 @@ public class Robot extends IterativeRobot {
 	 * This function is called periodically during operator control
 	 */
 	@Override
-	public void teleopPeriodic() {
+	public void teleopPeriodic() 
+	{
 		Scheduler.getInstance().run();
+		log();
 	}
 
 	/**

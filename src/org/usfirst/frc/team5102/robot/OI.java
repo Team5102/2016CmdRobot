@@ -1,10 +1,8 @@
 package org.usfirst.frc.team5102.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.buttons.Button;
-import edu.wpi.first.wpilibj.buttons.JoystickButton;
-
-import org.usfirst.frc.team5102.robot.commands.DriveWithJoysticks;
+import edu.wpi.first.wpilibj.buttons.*;
+import edu.wpi.first.wpilibj.XboxController;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -21,7 +19,8 @@ public class OI
 	// Button button = new JoystickButton(stick, buttonNumber);
 
 	// TODO add files for import.
-	Xbox driveController = new Xbox(RobotMap.driveControllerPort;
+	//Done
+	XboxController driveController = new XboxController(RobotMap.driveControllerPort);
 	
 	Joystick joystick = new Joystick(0);
 	
@@ -66,7 +65,7 @@ public class OI
 	}
 	
 	/**
-	 * This method should act as a wrapper for {@link Xbox}
+	 * This method should act as a wrapper for {@link XboxController}
 	 * 	e.g. return driveController.getRightStick();
 	 * 
 	 * @return	Should return a double value from the axis.
@@ -77,7 +76,7 @@ public class OI
 	}
 	
 	
-	/** Make an arm xbox controller oject, too. Then make a "driveControllerLeftStick" equivalent for 
+	/** Make an arm xboxController object, too. Then make a "driveControllerLeftStick" equivalent for 
 	 * the arm joystick */
 	
 	

@@ -17,11 +17,19 @@ public class RobotMap {
 	// public static int rangefinderPort = 1;
 	// public static int rangefinderModule = 1;
 	
-	/** Used for init'ing the drive Xbox controller */
+	/** Used for init'ing the drive XboxController */
 	public static final int driveControllerPort = 0;
 
-	/** Used for init'ing the arm Xbox Controller. */
+	/** Used for init'ing the arm XboxController. */
 	public static final int armControllerPort = 1;
+
+	//Drive
+	public static final int leftDriveMotor1 = 0;
+	public static final int leftDriveMotor2 = 1;
+	public static final int leftDriveMotor3 = 2;
+	public static final int rightDriveMotor1 = 3;
+	public static final int rightDriveMotor2 = 4;
+	public static final int rightDriveMotor3 = 5;
 	
 	// TODO: Keep adding everything to here.
 	
