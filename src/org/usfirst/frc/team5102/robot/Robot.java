@@ -36,7 +36,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		oi = new OI();
-		chooser.addDefault("Default Auto", new ExampleCommand());
+		chooser.addDefault("Default Auto", new DriveWithJoysticks());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
@@ -107,8 +107,7 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void teleopPeriodic() 
 	{
-		Scheduler.getInstance().run();
-		log();
+		
 	}
 
 	/**

@@ -1,15 +1,19 @@
 package org.usfirst.frc.team5102.robot.commands;
 
-import edu.wpi.first.wpilibj.command.Command;
+import org.usfirst.frc.team5102.robot.subsystems.DriveTrain;
 
-import org.usfirst.frc.team5102.robot.Robot;
+import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *	TODO: We still need to make our other commands. For example, we have an Arm class 
  *	that doesn't have any commands yet. Think something like a "MoveArm" command.
  */
 public class DriveWithJoysticks extends Command 
+
 {
+	public static DriveTrain DriveTrain;
+	
+	
 	public DriveWithJoysticks() 
 	{
 		// Use requires() here to declare subsystem dependencies

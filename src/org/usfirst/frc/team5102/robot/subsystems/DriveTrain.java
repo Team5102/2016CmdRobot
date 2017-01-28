@@ -27,8 +27,8 @@ public class DriveTrain extends Subsystem
     {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	
-    	 setDefaultCommand(new MoveWithJoysticks());
+    	//TODO Set defaultCommand
+    	// setDefaultCommand(new MoveWithJoysticks());
     	
     }
 }
