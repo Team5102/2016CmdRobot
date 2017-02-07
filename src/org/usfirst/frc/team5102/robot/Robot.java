@@ -1,8 +1,8 @@
 package org.usfirst.frc.team5102.robot;
 
 import org.usfirst.frc.team5102.robot.commands.DriveWithJoysticks;
+import org.usfirst.frc.team5102.robot.subsystems.Drive;
 import org.usfirst.frc.team5102.robot.subsystems.DriveTrain;
-import org.usfirst.frc.team5102.robot.subsystems.ExampleSubsystem;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -20,11 +20,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final Drive drive = new Drive();
 	public static OI oi;
 	public static DriveTrain driveTrain;
-	
-	//public static DriveWithJoysticks driveWithJoysticks;
+	public static DriveWithJoysticks driveWithJoysticks;
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();

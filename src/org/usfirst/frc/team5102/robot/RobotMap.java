@@ -24,12 +24,14 @@ public class RobotMap {
 	public static final int armControllerPort = 1;
 
 	//Drive
-	public static final int leftDriveMotor1 = 0;
-	public static final int leftDriveMotor2 = 1;
-	public static final int leftDriveMotor3 = 2;
-	public static final int rightDriveMotor1 = 3;
-	public static final int rightDriveMotor2 = 4;
-	public static final int rightDriveMotor3 = 5;
+	//Left Side
+		public static final int leftDriveMotor1 = 0;
+		public static final int leftDriveMotor2 = 1;
+		public static final int leftDriveMotor3 = 2;
+	//Right Side
+		public static final int rightDriveMotor1 = 3;
+		public static final int rightDriveMotor2 = 4;
+		public static final int rightDriveMotor3 = 5;
 	
 	// TODO: Keep adding everything to here.
 	

@@ -18,8 +18,7 @@ public class OI
 	// Joystick stick = new Joystick(port);
 	// Button button = new JoystickButton(stick, buttonNumber);
 
-	// TODO add files for import.
-	//Done
+	
 	XboxController driveController = new XboxController(RobotMap.driveControllerPort);
 	
 	Joystick joystick = new Joystick(0);

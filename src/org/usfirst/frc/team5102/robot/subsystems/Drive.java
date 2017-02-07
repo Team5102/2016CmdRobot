@@ -6,12 +6,10 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 /**
  *
  */
-public class Drive extends Subsystem {
-	
+public class Drive extends Subsystem 
+{
 	public static RobotDrive robotDrive;
 
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
 	
 	leftDriveMotors = new MultiSpeedController(
 			new Talon(RobotMap.leftDriveMotor1),
@@ -23,12 +21,16 @@ public class Drive extends Subsystem {
 			new Talon(RobotMap.rightDriveMotor2),
 			new Talon(RobotMap.rightDriveMotor3));
 	robotDrive = new RobotDrive(leftDriveMotors, rightDriveMotors);
+
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
 	
 
-    public void initDefaultCommand() {
+
+    public void initDefaultCommand() 
+    {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	
     	
     	
     }

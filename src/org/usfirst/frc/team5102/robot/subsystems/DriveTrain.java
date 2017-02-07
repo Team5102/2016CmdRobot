@@ -1,6 +1,8 @@
 package org.usfirst.frc.team5102.robot.subsystems;
 
 
+import org.usfirst.frc.team5102.robot.commands.DriveWithJoysticks;
+
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -16,7 +18,6 @@ public class DriveTrain extends Subsystem
 	public DriveTrain()
 	{
     	super("DriveTrain");
-    	//requires(); TODO Find if this needs a requirement
 	}
 	
 	
@@ -28,7 +29,7 @@ public class DriveTrain extends Subsystem
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     	//TODO Set defaultCommand
-    	// setDefaultCommand(new MoveWithJoysticks());
+    	 setDefaultCommand(new DriveWithJoysticks());
     	
     }
 }
